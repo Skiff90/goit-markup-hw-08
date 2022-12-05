@@ -6,10 +6,11 @@
 }
 
 .flex-basis {
-    flex-basis: calc((100% - (var(--indexCurrentGap) * var(--numberOfIndentations))) / var(--indexNumberOfCards));
+    width: 100%;
+    // width: calc((100% - (var(--indexCurrentGap) * var(--numberOfIndentations))) / var(--indexNumberOfCards));
 }
 
-.portfolio__item {
-    flex-basis: calc((100% - var(--portfolioCurrentGap) * (var(--numberOfIndentations) - 1)) / var(--portfolioNumberOfCards));;
-}
+// .portfolio__item {
+//     width: calc((100% - var(--portfolioCurrentGap) * (var(--numberOfIndentations) - 1)) / var(--portfolioNumberOfCards));;
+// }
 

@@ -27,6 +27,8 @@ img {
     max-width: 100%;
     display: block;
     height: auto;
+
+    width: 100%;
 }
 
 .link {
@@ -39,5 +41,9 @@ img {
 }
 
 .font-style {
+    font-style: normal;
+}
+
+address {
     font-style: normal;
 }

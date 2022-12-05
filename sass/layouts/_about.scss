@@ -1,11 +1,6 @@
 .about {
 	background-color: var(--light-bg-cl);
 }
-.about__container {
-	display: flex;
-}
-
-
 
 .about__article {
 	font-size: 14px;
@@ -14,10 +9,12 @@
 	line-height: calc(16 / 14);
 	text-transform: uppercase;
 }
+
 .about__paragraph {
 	line-height: calc(24 / 14);
 	color: var(--grey-cl);
 }
+
 .about__pictures {
 	display: flex;
 	align-items: center;
