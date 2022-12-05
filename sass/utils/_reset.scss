@@ -1,0 +1,43 @@
+textarea {
+    resize: none;
+}
+
+span {
+    color: var(--black-cl);
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.list {
+    list-style: none;
+}
+
+.font-style {
+    font-style: normal;
+}

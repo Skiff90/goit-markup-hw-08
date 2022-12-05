@@ -1,0 +1,21 @@
+@import './utils/vars';
+@import './utils/reset';
+@import './utils/card-set';
+@import './utils/visually-hidden';
+
+@import './components/base';
+@import './components/container';
+@import './components/section';
+@import './components/uppertitle';
+@import './components/modal';
+
+
+
+@import './layouts/portfolio';
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/about';
+@import './layouts/work';
+@import './layouts/team';
+@import './layouts/company';
+@import './layouts/footer';

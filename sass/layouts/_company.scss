@@ -1,0 +1,36 @@
+.company__title {
+    font-size: 36px;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.company__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.company__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4%;
+    fill: #afb1b8;
+    transition: fill var(--transition),
+    background-color var(--transition),
+    border var(--transition);
+    &:hover,
+    &:focus {
+        fill: var(--accent-txt-cl);
+        border: 1px solid var(--accent-txt-cl);
+    }
+}
+

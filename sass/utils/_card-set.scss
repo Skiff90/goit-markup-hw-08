@@ -1,0 +1,15 @@
+/* !!!!!!!!!!card set!!!!!! */
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indexCurrentGap);
+}
+
+.flex-basis {
+    flex-basis: calc((100% - (var(--indexCurrentGap) * var(--numberOfIndentations))) / var(--indexNumberOfCards));
+}
+
+.portfolio__item {
+    flex-basis: calc((100% - var(--portfolioCurrentGap) * (var(--numberOfIndentations) - 1)) / var(--portfolioNumberOfCards));;
+}
+
