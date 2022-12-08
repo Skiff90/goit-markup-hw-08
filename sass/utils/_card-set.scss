@@ -1,16 +1,16 @@
 /* !!!!!!!!!!card set!!!!!! */
 .card-set {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--indexCurrentGap);
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--indexCurrentGap);
 }
 
 .card-set-items {
-    width: 100%;
-    // width: calc((100% - (var(--indexCurrentGap) * var(--numberOfIndentations))) / var(--indexNumberOfCards));
+	width: 100%;
+
+	// width: calc((100% - (var(--indexCurrentGap) * var(--numberOfIndentations))) / var(--indexNumberOfCards));
 }
 
 // .portfolio__item {
 //     width: calc((100% - var(--portfolioCurrentGap) * (var(--numberOfIndentations) - 1)) / var(--portfolioNumberOfCards));;
 // }
-

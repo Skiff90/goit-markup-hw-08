@@ -56,6 +56,7 @@ img {
   max-width: 100%;
   display: block;
   height: auto;
+  width: 100%;
 }
 
 .link {
@@ -71,6 +72,10 @@ img {
   font-style: normal;
 }
 
+address {
+  font-style: normal;
+}
+
 /* !!!!!!!!!!card set!!!!!! */
 .card-set {
   display: -webkit-box;
@@ -81,14 +86,8 @@ img {
   gap: var(--indexCurrentGap);
 }
 
-.flex-basis {
-  -ms-flex-preferred-size: calc((100% - var(--indexCurrentGap) * var(--numberOfIndentations)) / var(--indexNumberOfCards));
-      flex-basis: calc((100% - var(--indexCurrentGap) * var(--numberOfIndentations)) / var(--indexNumberOfCards));
-}
-
-.portfolio__item {
-  -ms-flex-preferred-size: calc((100% - var(--portfolioCurrentGap) * (var(--numberOfIndentations) - 1)) / var(--portfolioNumberOfCards));
-      flex-basis: calc((100% - var(--portfolioCurrentGap) * (var(--numberOfIndentations) - 1)) / var(--portfolioNumberOfCards));
+.card-set-items {
+  width: 100%;
 }
 
 .visually-hidden {
@@ -115,16 +114,37 @@ body {
 }
 
 .container {
-  width: 1200px;
+  outline: 1px solid red;
+  outline-offset: -1px;
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1600px;
+  }
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .uppertitle {
@@ -645,12 +665,6 @@ body {
 
 .about {
   background-color: var(--light-bg-cl);
-}
-
-.about__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .about__article {
