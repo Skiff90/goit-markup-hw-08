@@ -32,6 +32,10 @@
 	}
 }
 
+.portfolio-item {
+	width: calc((100% - 2 * 30px) / 3);
+}
+
 .portfolio__button--current {
 	color: var(--white-cl);
 	background-color: var(--accent-txt-cl);

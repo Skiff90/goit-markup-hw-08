@@ -1,15 +1,15 @@
 textarea {
-    resize: none;
+	resize: none;
 }
 
 span {
-    color: var(--black-cl);
+	color: var(--black-cl);
 }
 
 ul,
 li {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 h1,
@@ -19,31 +19,31 @@ h4,
 h5,
 h6,
 p {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 img {
-    max-width: 100%;
-    display: block;
-    height: auto;
+	display: block;
+	height: auto;
+	max-width: 100%;
 
-    width: 100%;
+	width: 100%;
 }
 
 .link {
-    text-decoration: none;
-    color: currentColor;
+	text-decoration: none;
+	color: currentColor;
 }
 
 .list {
-    list-style: none;
+	list-style: none;
 }
 
 .font-style {
-    font-style: normal;
+	font-style: normal;
 }
 
 address {
-    font-style: normal;
+	font-style: normal;
 }

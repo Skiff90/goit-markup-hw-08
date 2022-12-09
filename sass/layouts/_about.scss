@@ -4,6 +4,9 @@
 	font-weight: 700;
 	line-height: calc(16 / 14);
 	text-transform: uppercase;
+	@media screen and (max-width: 767px) {
+		text-align: center;
+	}
 }
 
 .about__paragraph {
