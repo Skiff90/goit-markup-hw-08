@@ -1,7 +1,5 @@
 /* !!!!!!!!!!card set!!!!!! */
 .card-set {
-	// display: flex;
-	// flex-wrap: wrap;
 	gap: 30px;
 	@media screen and (min-width: 768px) {
 		display: flex;
@@ -22,10 +20,3 @@
 		}
 	}
 }
-
-// .portfolio-item {
-// 	width: calc(
-// 		(100% - (var(--indexCurrentGap) * var(--numberOfIndentations))) /
-// 			var(--indexNumberOfCards)
-// 	);
-// }
