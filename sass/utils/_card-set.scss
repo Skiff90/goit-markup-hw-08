@@ -1,16 +1,31 @@
 /* !!!!!!!!!!card set!!!!!! */
 .card-set {
-	display: flex;
-	flex-wrap: wrap;
-	gap: var(--indexCurrentGap);
+	// display: flex;
+	// flex-wrap: wrap;
+	gap: 30px;
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
-
-.card-set-items {
+.card-set-item {
 	width: 100%;
-
-	// width: calc((100% - (var(--indexCurrentGap) * var(--numberOfIndentations))) / var(--indexNumberOfCards));
+	@media screen and (min-width: 768px) {
+		width: calc((100% - 2 * 30px) / 2);
+	}
+	@media screen and (min-width: 1200px) {
+		width: calc((100% - 3 * 30px) / 4);
+	}
+	&:not(:last-child) {
+		@media screen and (max-width: 767px) {
+			margin-bottom: 30px;
+		}
+	}
 }
 
-// .portfolio__item {
-//     width: calc((100% - var(--portfolioCurrentGap) * (var(--numberOfIndentations) - 1)) / var(--portfolioNumberOfCards));;
+// .portfolio-item {
+// 	width: calc(
+// 		(100% - (var(--indexCurrentGap) * var(--numberOfIndentations))) /
+// 			var(--indexNumberOfCards)
+// 	);
 // }

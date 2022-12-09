@@ -1,36 +1,60 @@
 .company__title {
-    font-size: 36px;
-    font-family: Roboto;
-    font-weight: 700;
-    line-height: 42px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    margin-bottom: 50px;
+	font-size: 36px;
+	font-family: Roboto;
+	font-weight: 700;
+	line-height: 42px;
+	letter-spacing: 0.03em;
+	text-align: center;
+	margin-bottom: 50px;
 }
 
 .company__list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	@media screen and (min-width: 1200px) {
+		justify-content: center;
+		align-items: center;
+	}
+	gap: 30px;
+}
+
+.company__item {
+	width: 100%;
+	@media screen and (min-width: 480px) {
+		width: calc((100% - 1 * 30px) / 2);
+	}
+	@media screen and (min-width: 768px) {
+		width: calc((100% - 2 * 30px) / 3);
+	}
+	@media screen and (min-width: 1200px) {
+		width: calc((100% - 5 * 30px) / 6);
+	}
 }
 
 .company__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 170px;
-    height: 92px;
-    border: 1px solid rgba(175, 177, 184, 1);
-    border-radius: 4%;
-    fill: #afb1b8;
-    transition: fill var(--transition),
-    background-color var(--transition),
-    border var(--transition);
-    &:hover,
-    &:focus {
-        fill: var(--accent-txt-cl);
-        border: 1px solid var(--accent-txt-cl);
-    }
-}
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 100%;
+	max-height: 92px;
+	border: 1px solid rgba(175, 177, 184, 1);
+	border-radius: 4%;
+	fill: #afb1b8;
+	transition: fill var(--transition), background-color var(--transition),
+		border var(--transition);
+	&:hover,
+	&:focus {
+		fill: var(--accent-txt-cl);
+		border: 1px solid var(--accent-txt-cl);
+	}
+	@media screen and (min-width: 480px) {
+		max-width: 210px;
+	}
+	@media screen and (min-width: 768px) {
+		max-width: 226px;
+	}
 
+	@media screen and (min-width: 1200px) {
+		max-width: 170px;
+	}
+}
