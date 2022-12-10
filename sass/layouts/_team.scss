@@ -1,18 +1,24 @@
 .team {
 	background-color: #f5f4fa;
+
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .team__main {
 	font-size: 28px;
-	font-weight: 400;
-	line-height: 33px;
+	font-weight: 700;
+	line-height: calc(33 / 28);
 	letter-spacing: 0.03em;
 	text-align: center;
-
+	padding-bottom: 30px;
+	@include desktop {
+		font-size: 36px;
+		line-height: calc(42 / 36);
+		padding-bottom: 50px;
+	}
 	margin-left: auto;
 	margin-right: auto;
-	// font-size: 36px;
-	// line-height: calc(42 / 36);
 }
 
 .team__name {
