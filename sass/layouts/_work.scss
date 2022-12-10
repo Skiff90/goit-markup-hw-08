@@ -1,42 +1,54 @@
 .work {
-    background-color: var(--white-cl);
-    padding-top: 0;
+	background-color: var(--white-cl);
+	padding-top: 0;
+	@media screen and (max-width: 1199px) {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		margin: -1px;
+		border: 0;
+		padding: 0;
+		white-space: nowrap;
+		clip-path: inset(100%);
+		clip: rect(0 0 0 0);
+		overflow: hidden;
+	}
 }
 
 .work__main {
-    text-align: center;
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: calc(42 / 36);
-    margin-left: auto;
-    margin-right: auto;
+	text-align: center;
+	margin-bottom: 50px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: calc(42 / 36);
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .work__card--wrapper {
-    position: relative;
+	position: relative;
 }
 
 .work__card--down {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(47, 48, 58, 0.8);
+	display: block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(47, 48, 58, 0.8);
 }
 
 .work__card--text {
-    font-family: var(--main-font);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--color-wrapper);
+	font-family: var(--main-font);
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--color-wrapper);
 }
