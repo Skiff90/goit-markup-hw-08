@@ -14,22 +14,22 @@
 	width: 480px;
 	height: 400px;
 	background-image: var(--heroBackgroundGradient),
-		url(/images/hero/hero__mobile/Hero_mobile.jpg);
+		url(/images/hero/mobile/Hero-mobile.jpg);
 	background-size: 480px 400px;
 	@include retina2x {
 		background-image: var(--heroBackgroundGradient),
-			url(/images/hero/hero__mobile/Hero-mobile2x.jpg);
+			url(/images/hero/mobile/Hero-mobile2x.jpg);
 	}
 
 	@include tablet {
 		width: 768px;
 		height: 400px;
 		background-image: var(--heroBackgroundGradient),
-			url(/images/hero/hero__tablet/Hero_tablet.jpg);
+			url(/images/hero/tablet/Hero-tablet.jpg);
 		background-size: 768px 400px;
 		@include retina2x {
 			background-image: var(--heroBackgroundGradient),
-				url(/images/hero/hero__tablet/Hero-tablet2x.jpg);
+				url(/images/hero/tablet/Hero-tablet2x.jpg);
 		}
 	}
 
@@ -37,11 +37,11 @@
 		width: 1600px;
 		height: 600px;
 		background-image: var(--heroBackgroundGradient),
-			url(/images/hero/hero__desktop/hero-bg__desktop.jpg);
+			url(/images/hero/desktop/Hero-bg-desktop.jpg);
 		background-size: 1600px 600px;
 		@include retina2x {
 			background-image: var(--heroBackgroundGradient),
-				url(/images/hero/hero__desktop/Hero-desktop2x.jpg);
+				url(/images/hero/desktop/Hero-desktop2x.jpg);
 		}
 	}
 
