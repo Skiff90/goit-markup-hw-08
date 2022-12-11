@@ -15,6 +15,12 @@
   --active-accent-color: #1a81bd;
   /* hero-button-vars */
   --hero-button-text: #ffffff;
+  /* hero-background-gradient*/
+  --heroBackgroundGradient: linear-gradient(
+  	to left top,
+  	rgba(47, 48, 58, 0.4),
+  	rgba(47, 48, 58, 0.4)
+  );
   /* background-color */
   --Color-background: #2f303a;
   /* transion */
@@ -114,6 +120,22 @@ address {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.menu__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
 }
 
 body {
@@ -558,6 +580,11 @@ body {
 .header__nav {
   margin-right: 305px;
 }
+@media screen and (max-width: 767px) {
+  .header__nav {
+    display: none;
+  }
+}
 
 .nav__list {
   display: -webkit-box;
@@ -620,6 +647,11 @@ body {
   display: flex;
   gap: 30px;
 }
+@media screen and (max-width: 767px) {
+  .contact__list {
+    display: none;
+  }
+}
 
 .contact__item {
   gap: 10px;
@@ -642,8 +674,7 @@ body {
 .hero__overlay {
   max-width: 1600px;
   height: 600px;
-  background-image: -webkit-gradient(linear, right bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-bg.jpg);
-  background-image: linear-gradient(to left top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg.jpg);
+  background-image: var(--heroBackgroundGradient), url(../images/hero/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

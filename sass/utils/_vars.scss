@@ -13,8 +13,16 @@
 	--contact-cl: rgba(255, 255, 255, 0.6);
 	--color-wrapper: #eeeeee;
 	--active-accent-color: #1a81bd;
+
 	/* hero-button-vars */
 	--hero-button-text: #ffffff;
+
+	/* hero-background-gradient*/
+	--heroBackgroundGradient: linear-gradient(
+		to left top,
+		rgba(47, 48, 58, 0.4),
+		rgba(47, 48, 58, 0.4)
+	);
 
 	/* background-color */
 	--Color-background: #2f303a;

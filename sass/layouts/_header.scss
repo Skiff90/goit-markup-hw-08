@@ -27,8 +27,13 @@
 	color: #000000;
 }
 
+// навігаційна панель
 .header__nav {
 	margin-right: 305px;
+
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
 }
 
 .nav__list {
@@ -77,10 +82,14 @@
 		transition: color var(--transition);
 	}
 }
+// панель контактів
 
 .contact__list {
 	display: flex;
 	gap: 30px;
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
 }
 
 .contact__item {
