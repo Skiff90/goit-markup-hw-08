@@ -126,8 +126,6 @@ body {
 }
 
 .container {
-  outline: 1px solid red;
-  outline-offset: -1px;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -530,13 +528,15 @@ body {
   border-bottom: 1px solid rgb(236, 236, 236);
 }
 
-.header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 1200px) {
+  .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .header__logo {
@@ -559,7 +559,7 @@ body {
   margin-right: 305px;
 }
 
-.nav__items {
+.nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -614,7 +614,7 @@ body {
   transition: color var(--transition);
 }
 
-.contact__items {
+.contact__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
