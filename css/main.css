@@ -136,6 +136,7 @@ address {
   height: 40px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 body {
@@ -183,11 +184,18 @@ body {
 .uppertitle {
   font-family: var(--main-font);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636363636;
+  font-size: 26px;
+  line-height: 1.6153846154;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--white-cl);
+}
+@media screen and (min-width: 1200px) {
+  .uppertitle {
+    font-size: 44px;
+    line-height: 1.3636363636;
+  }
 }
 
 .backdrop {
@@ -666,30 +674,59 @@ body {
 }
 
 .hero {
-  padding: 200px 0;
+  padding: 118px 60px;
   text-align: center;
   background-color: #2f303a;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 118px 204px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 452px;
+  }
+}
 
 .hero__overlay {
-  max-width: 1600px;
-  height: 600px;
-  background-image: var(--heroBackgroundGradient), url(/images/hero/hero__desktop/hero-bg__desktop.jpg);
+  width: 480px;
+  height: 400px;
+  background-image: var(--heroBackgroundGradient), url(/images/hero/hero__mobile/Hero_mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 768px) {
+  .hero__overlay {
+    width: 768px;
+    background-image: var(--heroBackgroundGradient), url(/images/hero/hero__tablet/Hero_tablet.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__overlay {
+    width: 1600px;
+    height: 600px;
+    background-image: var(--heroBackgroundGradient), url(/images/hero/hero__desktop/hero-bg__desktop.jpg);
+  }
+}
 
 .hero__main {
-  margin-bottom: 30px;
-  min-width: 696px;
+  min-width: 360px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__main {
+    min-width: 696px;
+  }
 }
 
 .hero__button {
+  padding: 10px 24px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -698,7 +735,6 @@ body {
   color: var(--hero-button-text);
   background-color: var(--accent-txt-cl);
   cursor: pointer;
-  padding: 10px 32px;
   border: none;
   border-radius: 4px;
   -webkit-transition: color var(--transition), background-color var(--transition);
@@ -709,6 +745,11 @@ body {
   background-color: var(--active-accent-color);
   -webkit-transition: var(--transition);
   transition: var(--transition);
+}
+@media screen and (min-width: 1200px) {
+  .hero__button {
+    padding: 10px 32px;
+  }
 }
 
 .about__article {
