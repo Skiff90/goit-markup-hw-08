@@ -63,6 +63,12 @@ img {
   text-decoration: none;
   color: currentColor;
 }
+.link:hover, .link:focus, .link:active {
+  color: var(--accent-txt-cl);
+  fill: var(--accent-txt-cl);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
 
 .list {
   list-style: none;
@@ -156,6 +162,63 @@ address {
   background-color: transparent;
   border: none;
   display: block;
+}
+.menu-close__button:hover, .menu-close__button:focus, .menu-close__button:active {
+  fill: var(--accent-txt-cl);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.menu-nav__list {
+  margin-bottom: 302px;
+}
+
+.menu-nav__item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+}
+.menu-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu-contact__list {
+  margin-bottom: 64px;
+}
+
+.menu-tell__item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  margin-bottom: 32px;
+}
+
+.menu-mail__item {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.menu-socials__list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 20px;
+}
+
+.menu-socials__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 
 body {

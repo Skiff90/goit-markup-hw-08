@@ -32,6 +32,13 @@ img {
 .link {
 	text-decoration: none;
 	color: currentColor;
+	&:hover,
+	&:focus,
+	&:active {
+		color: var(--accent-txt-cl);
+		fill: var(--accent-txt-cl);
+		transition: var(--transition);
+	}
 }
 
 .list {

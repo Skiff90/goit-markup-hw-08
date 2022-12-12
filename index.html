@@ -28,7 +28,7 @@
 				<a href="./index.html" class="header__logo link"
 					>Web<span class="header__logo--span">Studio</span>
 				</a>
-				<button class="menu-open__button" type="button">
+				<button class="menu-open__button" js-open-menu type="button">
 					<svg width="40" height="40">
 						<use href="./images/icons.svg#menu-open__mobile"></use>
 					</svg>
@@ -69,42 +69,47 @@
 					</li>
 				</ul>
 			</div>
-			<div class="mobile-menu">
+			<div class="mobile-menu" js-menu-container>
 				<div class="container">
-					<button class="menu-close__button" type="button">
+					<button class="menu-close__button" js-close-menu type="button">
 						<svg width="40" height="40">
 							<use href="./images/icons.svg#menu-close__mobile"></use>
 						</svg>
 					</button>
 					<ul class="menu-nav__list list">
 						<li class="menu-nav__item">
-							<a href="./index.html" class="nav__link nav__link--current"
-								>Студія</a
-							>
+							<a href="./index.html" class="link nav__link--current">Студія</a>
 						</li>
 						<li class="menu-nav__item">
-							<a href="./portfolio.html" class="nav__link">Портфоліо</a>
+							<a href="./portfolio.html" class="link">Портфоліо</a>
 						</li>
 						<li class="menu-nav__item">
-							<a href="" class="nav__link">Контакти</a>
+							<a href="" class="link">Контакти</a>
 						</li>
 					</ul>
 					<ul class="menu-contact__list list">
-						<li class="menu-contact__item">
+						<li class="menu-tell__item">
+							<a class="link" href="tel:+380961111111"> +38 096 111 11 11</a>
+						</li>
+						<li class="menu-mail__item">
 							<a class="link" href="mailto:info@devstudio.com">
-								<svg class="contact__icon" width="16" height="12">
-									<use href="./images/icons.svg#mail"></use>
-								</svg>
 								info@devstudio.com</a
 							>
 						</li>
-						<li class="menu-contact__item">
-							<a class="link" href="tel:+380961111111">
-								<svg class="contact__icon" width="16" height="12">
-									<use href="./images/icons.svg#tell"></use>
-								</svg>
-								+38 096 111 11 11</a
-							>
+					</ul>
+
+					<ul class="menu-socials__list list">
+						<li class="menu-socials__item">
+							<a href="" class="menu-socials__link">Instagram</a>
+						</li>
+						<li class="menu-socials__item">
+							<a href="" class="menu-socials__link">Twitter</a>
+						</li>
+						<li class="menu-socials__item">
+							<a href="" class="menu-socials__link">Facebook</a>
+						</li>
+						<li class="menu-socials__item">
+							<a href="" class="menu-socials__link">LinkedIn</a>
 						</li>
 					</ul>
 				</div>
@@ -744,15 +749,15 @@
 
 		<!-- Модальне вікно -->
 
-		<div class="backdrop is-hidden" data-modal>
+		<!-- <div class="backdrop is-hidden" data-modal>
 			<div class="modal">
-				<!-- кнопка закриття модального вікна -->
+				
 				<button type="button" data-modal-close class="modal__button--close">
 					<svg class="modal__icon--close" width="18" height="18">
 						<use href="./images/icons.svg#close-black"></use>
 					</svg>
 				</button>
-				<!-- поля для вводу в модальному вікні -->
+				
 				<form>
 					<h3 class="modal__title">Залиште свої дані, ми вам передзвонимо</h3>
 					<div class="modal__client--field">
@@ -830,7 +835,7 @@
 					</div>
 				</form>
 			</div>
-		</div>
+		</div> -->
 		<script
 			defer
 			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
