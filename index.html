@@ -28,7 +28,7 @@
 				<a href="./index.html" class="header__logo link"
 					>Web<span class="header__logo--span">Studio</span>
 				</a>
-				<button class="menu-open__button" js-open-menu type="button">
+				<button class="menu-open__button" data-menu-open type="button">
 					<svg width="40" height="40">
 						<use href="./images/icons.svg#menu-open__mobile"></use>
 					</svg>
@@ -69,10 +69,10 @@
 					</li>
 				</ul>
 			</div>
-			<div class="mobile-menu" js-menu-container>
+			<div class="mobile-menu is-hidden" data-menu>
 				<div class="container">
 					<div class="mobile-menu__top">
-						<button class="menu-close__button" js-close-menu type="button">
+						<button class="menu-close__button" data-menu-close type="button">
 							<svg width="40" height="40">
 								<use href="./images/icons.svg#menu-close__mobile"></use>
 							</svg>
@@ -841,13 +841,7 @@
 				</form>
 			</div>
 		</div> -->
-		<script
-			defer
-			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-			crossorigin="anonymous"
-		></script>
-		<script src="./js/mobile-menu.js"></script>
+		<script src="./js/menu.js"></script>
 		<script src="./js/modal.js"></script>
 	</body>
 </html>

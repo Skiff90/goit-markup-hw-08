@@ -1,5 +1,16 @@
 .header {
 	width: 100%;
+	@include mobile {
+		min-width: 480px;
+		height: 60px;
+	}
+	@include tablet {
+		min-width: 768px;
+		height: 80px;
+	}
+	@include desktop {
+		max-width: 1600px;
+	}
 	background-color: var(--white-cl);
 	border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
@@ -10,8 +21,8 @@
 }
 
 .header__logo {
-	padding-bottom: 25px;
-	padding-top: 24px;
+	// padding-bottom: 25px;
+	// padding-top: 24px;
 	margin-right: 93px;
 	font-family: var(--secondary-font);
 	font-weight: 700;
