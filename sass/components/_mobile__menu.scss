@@ -1,4 +1,16 @@
-.menu__button {
+.mobile-menu {
+	position: fixed;
+	top: 0;
+	background-color: white;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1;
+	padding-top: 48px;
+	padding-bottom: 48px;
+	padding-left: 40px;
+}
+
+.menu-open__button {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -7,4 +19,11 @@
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
+	margin-left: auto;
+}
+.menu-close__button {
+	margin-left: auto;
+	background-color: transparent;
+	border: none;
+	display: block;
 }

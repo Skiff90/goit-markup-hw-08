@@ -4,14 +4,16 @@
 		padding: 118px 204px;
 	}
 	@include desktop {
-		padding: 200px 452px;
+		padding: 200px 118px;
 	}
 	text-align: center;
 	background-color: #2f303a;
+	margin-right: 0;
+	margin-left: 0;
 }
 
 .hero__overlay {
-	width: 480px;
+	max-width: 480px;
 	height: 400px;
 	background-image: var(--heroBackgroundGradient),
 		url(/images/hero/mobile/Hero-mobile.jpg);
@@ -22,7 +24,7 @@
 	}
 
 	@include tablet {
-		width: 768px;
+		max-width: 768px;
 		height: 400px;
 		background-image: var(--heroBackgroundGradient),
 			url(/images/hero/tablet/Hero-tablet.jpg);
@@ -34,7 +36,7 @@
 	}
 
 	@include desktop {
-		width: 1600px;
+		max-width: 1600px;
 		height: 600px;
 		background-image: var(--heroBackgroundGradient),
 			url(/images/hero/desktop/Hero-bg-desktop.jpg);

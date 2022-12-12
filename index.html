@@ -23,14 +23,14 @@
 	<body>
 		<!-- Header-section -->
 
-		<!-- <header class="header">
+		<header class="header">
 			<div class="header__container container">
 				<a href="./index.html" class="header__logo link"
 					>Web<span class="header__logo--span">Studio</span>
 				</a>
-				<button class="menu__button" type="button">
+				<button class="menu-open__button" type="button">
 					<svg width="40" height="40">
-						<use href="./images/icons.svg#menu__mobile"></use>
+						<use href="./images/icons.svg#menu-open__mobile"></use>
 					</svg>
 				</button>
 
@@ -69,7 +69,47 @@
 					</li>
 				</ul>
 			</div>
-		</header> -->
+			<div class="mobile-menu">
+				<div class="container">
+					<button class="menu-close__button" type="button">
+						<svg width="40" height="40">
+							<use href="./images/icons.svg#menu-close__mobile"></use>
+						</svg>
+					</button>
+					<ul class="menu-nav__list list">
+						<li class="menu-nav__item">
+							<a href="./index.html" class="nav__link nav__link--current"
+								>Студія</a
+							>
+						</li>
+						<li class="menu-nav__item">
+							<a href="./portfolio.html" class="nav__link">Портфоліо</a>
+						</li>
+						<li class="menu-nav__item">
+							<a href="" class="nav__link">Контакти</a>
+						</li>
+					</ul>
+					<ul class="menu-contact__list list">
+						<li class="menu-contact__item">
+							<a class="link" href="mailto:info@devstudio.com">
+								<svg class="contact__icon" width="16" height="12">
+									<use href="./images/icons.svg#mail"></use>
+								</svg>
+								info@devstudio.com</a
+							>
+						</li>
+						<li class="menu-contact__item">
+							<a class="link" href="tel:+380961111111">
+								<svg class="contact__icon" width="16" height="12">
+									<use href="./images/icons.svg#tell"></use>
+								</svg>
+								+38 096 111 11 11</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
 
 		<!-- Main section -->
 		<main>
@@ -197,7 +237,7 @@
 
 			<!-- Секція Робітникі -->
 
-			<section class="team section">
+			<!-- <section class="team section">
 				<div class="container">
 					<h2 class="team__main">Наша команда</h2>
 					<ul class="card-set list">
@@ -211,24 +251,24 @@
 								/>
 								<source
 									srsset="
-									./images/team/desktop/team-1-desktop.jpg     1x,
-									./images/team/desktop/team-1-desktop-2x.jpg  2x"
+									./images/team/tablet/team-1-tablet.jpg     1x,
+									./images/team/tablet/team-1-tablet-2x.jpg  2x"
 									media="(min-width:768px)"
 								/>
 								<source
 									srsset="
-									./images/team/desktop/team-1-desktop.jpg     1x,
-									./images/team/desktop/team-1-desktop-2x.jpg  2x"
+									./images/team/mobile/team-1-mobile.jpg     1x,
+									./images/team/mobile/team-1-mobile-2x.jpg  2x"
 									media="(max-width:767px)"
 								/>
+								<img
+									src="./images/team/mobile/team-1-mobile.jpg"
+									alt="team-1"
+									class="team-crew"
+									width="450"
+								/>
 							</picture>
-							<img
-								src="./images/team/team-1.jpg"
-								alt="team-1"
-								class="team-crew"
-								width="270"
-								height="260"
-							/>
+
 							<div class="team__list">
 								<h3 class="team__name">Ігор Дем'яненко</h3>
 								<p class="team__job" lang="en">Product Designer</p>
@@ -292,27 +332,31 @@
 							<picture>
 								<source
 									srsset="
-									./images/team/desktop/team-1-desktop.jpg     1x,
-									./images/team/desktop/team-1-desktop-2x.jpg  2x"
+									./images/team/desktop/team-2-desktop.jpg     1x,
+									./images/team/desktop/team-2-desktop-2x.jpg  2x"
 									media="(min-width:1200px)"
 								/>
-								rce srsset=" ./images/team/desktop/team-1-desktop.jpg 1x,
-								./images/team/desktop/team-1-desktop-2x.jpg 2x"
-								media="(min-width:768px)" />
 								<source
 									srsset="
-									./images/team/desktop/team-1-desktop.jpg     1x,
-									./images/team/desktop/team-1-desktop-2x.jpg  2x"
+									 ./images/team/tablet/team-2-tablet.jpg   1x,
+									./images/team/tablet/team-2-tablet-2x.jpg 2x"
+									media="(min-width:768px)"
+								/>
+								<source
+									srsset="
+									./images/team/mobile/team-2-mobile.jpg     1x,
+									./images/team/mobile/team-2-mobile-2x.jpg  2x"
 									media="(max-width:767px)"
 								/>
+								<img
+									src="./images/team/mobile/team-2-mobile.jpg"
+									alt="team-2"
+									class="taem-crew"
+									450
+									width="450"
+								/>
 							</picture>
-							<img
-								src="./images/team/team-2.jpg"
-								alt="team-2"
-								class="taem-crew"
-								width="270"
-								height="260"
-							/>
+
 							<div class="team__list">
 								<h3 class="team__name">Ольга Рєпіна</h3>
 								<p class="team__job" lang="en">Frontend Developer</p>
@@ -376,30 +420,30 @@
 							<picture>
 								<source
 									srsset="
-									./images/team/desktop/team-1-desktop.jpg     1x,
-									./images/team/desktop/team-1-desktop-2x.jpg  2x"
+									./images/team/desktop/team-3-desktop.jpg     1x,
+									./images/team/desktop/team-3-desktop-2x.jpg  2x"
 									media="(min-width:1200px)"
 								/>
 								<source
 									srsset="
-									./images/team/desktop/team-1-desktop.jpg     1x,
-									./images/team/desktop/team-1-desktop-2x.jpg  2x"
+									./images/team/tablet/team-3-tablet.jpg     1x,
+									./images/team/tablet/team-3-tablet-2x.jpg  2x"
 									media="(min-width:768px)"
 								/>
 								<source
 									srsset="
-									./images/team/desktop/team-1-desktop.jpg     1x,
-									./images/team/desktop/team-1-desktop-2x.jpg  2x"
+									./images/team/mobile/team-3-mobile.jpg     1x,
+									./images/team/mobile/team-3-mobile-2x.jpg  2x"
 									media="(max-width:767px)"
 								/>
+								<img
+									src="./images/team/mobile/team-3-mobile.jpg"
+									alt="team-3"
+									class="team-crew"
+									width="450"
+								/>
 							</picture>
-							<img
-								src="./images/team/team-3.jpg"
-								alt="team-3"
-								class="team-crew"
-								width="270"
-								height="260"
-							/>
+
 							<div class="team__list">
 								<h3 class="team__name">Микола Тарасов</h3>
 								<p class="team__job" lang="en">Marketing</p>
@@ -463,30 +507,31 @@
 							<picture>
 								<source
 									srsset="
-									./images/team/desktop/team-1-desktop.jpg     1x,
-									./images/team/desktop/team-1-desktop-2x.jpg  2x"
+									./images/team/desktop/team-4-desktop.jpg     1x,
+									./images/team/desktop/team-4-desktop-2x.jpg  2x"
 									media="(min-width:1200px)"
 								/>
 								<source
 									srsset="
-									./images/team/desktop/team-1-desktop.jpg     1x,
-									./images/team/desktop/team-1-desktop-2x.jpg  2x"
+									./images/team/tablet/team-4-tablet.jpg     1x,
+									./images/team/tablet/team-4-tablet-2x.jpg  2x"
 									media="(min-width:768px)"
 								/>
 								<source
 									srsset="
-									./images/team/desktop/team-1-desktop.jpg     1x,
-									./images/team/desktop/team-1-desktop-2x.jpg  2x"
+									./images/team/mobile/team-4-mobile.jpg     1x,
+									./images/team/mobile/team-4-mobile-2x.jpg  2x"
 									media="(max-width:767px)"
 								/>
+								<img
+									src="./images/team/mobile/team-4-mobile.jpg"
+									alt="team-4"
+									class="team-crew"
+									450
+									width="450"
+								/>
 							</picture>
-							<img
-								src="./images/team/team-4.jpg"
-								alt="team-4"
-								class="team-crew"
-								width="270"
-								height="260"
-							/>
+
 							<div class="team__list">
 								<h3 class="team__name">Михайло Єрмаков</h3>
 								<p class="team__job" lang="en">UI Designer</p>
@@ -548,7 +593,7 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- Секція Компанії -->
 
